@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <title>휴게소</title>
+    <link rel="stylesheet" href="./mobile/common.css?1664124059">
+    <link rel="stylesheet" href="./mobile/main.css?1664124059">
+    <link rel="stylesheet" href="./mobile/sub.css?1664124059">
+    <link rel="stylesheet" href="./mobile/iconfont.css?1664124059">
+    <link rel="stylesheet" href="./mobile/swiper-bundle.css">
+
+    <script type="text/javascript" src="./mobile/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="./mobile/jquery.bxslider.min.js"></script>
+
+</head>
+
+<body>
+
+  
+    <div id="container">
+        <div class="main-container">
+            <div class="main-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="https://i.imgur.com/qTYMJGT.gif" alt=""
+                            onClick="location.href='/mobile/main/freeboard_view.php?wr_id=200660'">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://i.imgur.com/27iSFBq.gif" alt=""
+                            onClick="location.href='/mobile/main/event_view.php?id=206535'">
+                    </div>
+                </div>
+              
+                	<!-- Add Pagination -->
+			<div class="swiper-pagination"></div>
+		</div>
+		<script src="./mobile/swiper-bundle.js"></script>
+		<script>
+			var swiper = new Swiper('.main-swiper', {
+				autoplay: {
+					delay: 2000,
+					stopOnLastSlide: false,
+					disableOnInteraction: true,
+				},
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: true,
+					type: 'bullets',
+				},
+			});
+					console.log(swiper.pagination.bullets.length);
+			for(i=0;i<swiper.pagination.bullets.length;i++){
+				console.log(swiper.pagination.bullets[i]);
+			}
+		</script>
+
+            <div class="main-floor1">
+                <ul class="clearfix">
+                    <li><a href="/mobile/main/cashin.php"><i class="iconfont">&#xe676;</i>충전</a></li>
+                    <li><a href="/mobile/main/cashout.php"><i class="iconfont">&#xe677;</i>환전</a></li>
+                    <li><a href="/mobile/main/qna.php"><i class="iconfont">&#xe678;</i>고객센터</a></li>
+                    <li><a href="javascript:getPayback();"><i class="iconfont">&#xed81;</i>페이백</a></li>
+                </ul>
+            </div>
+            <div class="main-floor2">
+                <ul>
+                    <li>
+                        <span>
+                            <a href="/mobile/main/sports.php?bt_type=5">
+                                <i class="iconfont">&#xe617;</i>
+                                <span>스포츠</span>
+                            </a>
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            <a href="javascript:get_live_url();">
+                                <i class="iconfont">&#xe839;</i>
+                                <span>인플레이</span>
+                            </a>
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            <a href="/mobile/main/janggu_power1.php">
+                                <i class="iconfont">&#xe832;</i>
+                                <span>미니게임</span>
+                            </a>
+                        </span>
+                    </li>
+   
+                    <li>
+                        <span>
+                            <a href="javascript:location.href='http://hg-ssqq.com/mobile/main/hilo10.php';">
+                                <i class="iconfont">&#xe6aa;</i>
+                                <span>토큰게임</span>
+                            </a>
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            <a href="/mobile/main/casino.php">
+                                <i class="iconfont" style="font-size:25px; top:8px;">&#xe74c;</i>
+                                <span>카지노</span>
+                            </a>
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            <a href="javascript:location.href='http://hg-ssqq.com/mobile/main/slot_list.php';">
+                                <i class="iconfont">&#xef2b;</i>
+                                <span>슬롯게임</span>
+                            </a>
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            <a href="/mobile/main/vsoccer.php">
+                                <i class="iconfont">&#xe83e;</i>
+                                <span>BET365</span>
+                            </a>
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            <a href="javascript:location.href='http://hg-ssqq.com/mobile/main/vsports.php';">
+                                <i><img src="./mobile/leap.png" alt="Leap가상스포츠" height="20"></i>
+                                <span>Leap가상스포츠</span>
+                            </a>
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            <a href="#" class="wopen_mini" data-id="bom_game">
+                                <i class="iconfont">&#xe65a;</i>
+                                <span>지뢰게임</span>
+                            </a>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+  
+<!-- 
+    <div id="footer">
+        <div class="footer-txt">
+            <p>COPYRIGHT &copy; <span style="color:#fff;">휴게소</span>. ALL RIGHTS RESERVED.</p>
+        </div>
+    </div>
+    -->
+
+</body>
+
+</html>

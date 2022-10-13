@@ -1,0 +1,482 @@
+﻿/*--ysk--------------------------------------------------------------------------------*
+
+	ysk 2016년01월
+
+-----------------------------------------------------------------------------------ysk-*/
+@charset "utf-8";
+@import url(./nanumgothic.css);
+/*-------------------------------------------------------------------------------------*
+ *  기본스타일시트  ( 그누보드 셋팅후 가변적스타일은 주석처리 해야함 )                 *
+ *-------------------------------------------------------------------------------------*/
+
+#live-iframe {
+    width: 1280px;
+    height: 600px;
+    border: 0;
+    display: block;
+    margin: 0;
+    padding: 6px 0;
+    -ms-zoom: 0.55;
+    -moz-transform: scale(0.55);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.55);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.55);
+    -webkit-transform-origin: 0 0;
+}
+
+::-webkit-input-placeholder { /* Safari, Chrome and Opera */
+    color: #2ea9d3;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: nanumgothic, sans-serif;
+}
+
+:-moz-placeholder { /* Firefox */
+    color: #2ea9d3;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: nanumgothic, sans-serif;
+}
+
+:-ms-input-placeholder { /* IE 10+ */
+    color: #2ea9d3;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: nanumgothic, sans-serif;
+}
+
+::-ms-input-placeholder { /* Edge */
+    color: #2ea9d3;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: nanumgothic, sans-serif;
+}
+
+:placeholder-shown { /* Default */
+    color: #2ea9d3;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: nanumgothic, sans-serif;
+}
+
+.font07::-webkit-input-placeholder { /* Safari, Chrome and Opera */
+    color: #ffc107;
+    font-size: 12px;
+    font-weight: 900;
+    font-family: 굴림, 돋음, Dotum, Arial, Helvetica, sans-serif;
+}
+
+.font07:-moz-placeholder { /* Firefox */
+    color: #ffc107;
+    font-size: 12px;
+    font-weight: 900;
+    font-family: 굴림, 돋음, Dotum, Arial, Helvetica, sans-serif;
+}
+
+.font07:-ms-input-placeholder { /* IE 10+ */
+    color: #ffc107;
+    font-size: 12px;
+    font-weight: 900;
+    font-family: 굴림, 돋음, Dotum, Arial, Helvetica, sans-serif;
+}
+
+.font07::-ms-input-placeholder { /* Edge */
+    color: #ffc107;
+    font-size: 12px;
+    font-weight: 900;
+    font-family: 굴림, 돋음, Dotum, Arial, Helvetica, sans-serif;
+}
+
+.font07:placeholder-shown { /* Default */
+    color: #ffc107;
+    font-size: 12px;
+    font-weight: 900;
+    font-family: 굴림, 돋음, Dotum, Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: #aaacae;
+    text-decoration: none
+}
+
+body {
+    font-size: 12px;
+    color: #aaacae;
+    margin: 0 0 0 0;
+    font-family: 굴림, 돋음, Dotum, Arial, Helvetica, sans-serif;
+    background: #2b2c2f
+}
+
+td {
+    font-size: 12px;
+    color: #aaacae;
+    margin: 0 0 0 0;
+    font-family: 굴림, 돋음, Dotum, Arial, Helvetica, sans-serif;
+}
+
+th {
+    font-size: 12px;
+	font-weight: 800;
+    color: #fff;
+	background: #2f2f2f;
+    margin: 0 0 0 0;
+	line-height: 1.3;
+	height: 38px;
+    font-family: 굴림, 돋음, Dotum, Arial, Helvetica, sans-serif;
+}
+
+div {
+    font-size: 12px;
+    /*color: #aaacae;*/
+    color: #ffffff;
+    margin: 0 0 0 0;
+    font-family: 굴림, 돋음, Dotum, Arial, Helvetica, sans-serif;
+}
+
+select {
+    font-size: 12px;
+    color: #aaacae;
+    margin: 0 0 0 0;
+    font-family: 굴림, 돋음, Dotum, Arial, Helvetica, sans-serif;
+}
+
+textarea {
+    font-size: 12px;
+    color: #aaacae;
+    margin: 0 0 0 0;
+    font-family: 굴림, 돋음, Dotum, Arial, Helvetica, sans-serif;
+}
+
+input {
+    font-size: 12px;
+    color: #aaacae;
+    margin: 0 0 0 0;
+    font-family: 굴림, 돋음, Dotum, Arial, Helvetica, sans-serif;
+    outline: none;
+    border: none
+}
+
+/*-------------------------------------------------------------------------------------*
+ *  고정적스타일                                                                       *
+ *-------------------------------------------------------------------------------------*/
+A, area {
+    blr: expression(this.onFocus=this.blur())
+}
+
+:focus {
+    -moz-outline-style: none;
+}
+
+form {
+    margin: 0;
+}
+
+img {
+    border: none;
+}
+
+
+ul, ol, li, dl, dd, dt {
+    margin: 0;
+    list-style: none;
+}
+
+html, body, div, span, object, p,
+blockquote, pre, abbr, address, cite, code, del, dfn, em, img,
+ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, caption, tbody, tfoot, thead, tr, th, swf, javascript,
+article, aside, canvas, details, figcaption, figure, footer, header, td,
+menu, nav, section, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0
+}
+
+#live-iframe {
+    width: 1280px;
+    height: 600px;
+    border: 0;
+    display: block;
+    margin: 0;
+    padding: 6px 0;
+    -ms-zoom: 0.55;
+    -moz-transform: scale(0.55);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.55);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.55);
+    -webkit-transform-origin: 0 0;
+}
+
+img, fieldset {
+    border: 0 none
+}
+
+img { /* max-width:100%; */
+    vertical-align: middle
+}
+
+
+marquee {
+    vertical-align: middle
+}
+
+textarea {
+    resize: none
+}
+
+input, select, textarea, button {
+    font-size: 100%;
+    vertical-align: middle;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%
+}
+
+address, strong, caption, cite, code, dfn, em, var {
+    font-style: normal;
+    font-weight: normal
+}
+
+blockquote, q {
+    quotes: none
+}
+
+    blockquote:before, blockquote:after, q:before, q:after {
+        content: "";
+        content: none
+    }
+
+/* 팝업 */
+/*#notice_layer, #notice_layer2, #notice_layer3 {*/
+.popup_layer {
+    margin: 0;
+    background: #000;
+    cursor: default;
+    font-size: 12px;
+    color: #000;
+    position: absolute;
+    left: 10px;
+    top: 150px;
+    width: 500px;
+    z-index: 800000;
+    letter-spacing: -.05em;
+    /*background: #000 url("../../images/popup_left.png") no-repeat 0 0;*/
+}
+
+.popup_layer_r {
+    padding: 1px 0px;
+    /*background: url("../../images/popup_right.png") no-repeat 100% 100%;*/
+}
+
+.popup_layer .notice_head {
+    width: 100%;
+    height: 34px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: -.05em;
+    text-align: center;
+    background-color: #000;
+    border-bottom: 1px solid #000;
+}
+
+#notice_layer2 .notice_head {
+    width: 100%;
+    height: 34px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: -.05em;
+    text-align: center;
+    background-color: #000;
+    border-bottom: 1px solid #000;
+}
+
+#notice_layer3 .notice_head {
+    width: 100%;
+    height: 34px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: -.05em;
+    text-align: center;
+    background-color: #000;
+    border-bottom: 1px solid #000;
+}
+
+.popup_layer .notice_title {
+    width: 100%;
+    height: 34px;
+    margin-top: 15px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+}
+
+#notice_layer2 .notice_title {
+    width: 100%;
+    height: 34px;
+    margin-top: 15px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+}
+
+#notice_layer3 .notice_title {
+    width: 100%;
+    height: 34px;
+    margin-top: 15px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+}
+
+.popup_layer .notice_content {
+    color: #fff;
+    height: 100%;
+    overflow: auto;
+    border: none;
+    word-wrap: break-word;
+    /*padding-left: 15px;
+    padding-right: 15px;*/
+    text-align: center;
+}
+
+.popup_layer .notice_foot {
+    width: 100%;
+    height: 34px;
+    color: #fff;
+    line-height: 34px;
+    letter-spacing: -.05em;
+    text-align: right;
+    background-color: #000;
+    border-top: 1px solid #000;
+}
+
+#notice_layer2 .notice_foot {
+    width: 100%;
+    height: 34px;
+    color: #fff;
+    line-height: 34px;
+    letter-spacing: -.05em;
+    text-align: right;
+    background-color: #000;
+    border-top: 1px solid #000;
+}
+
+#notice_layer3 .notice_foot {
+    width: 100%;
+    height: 34px;
+    color: #fff;
+    line-height: 34px;
+    letter-spacing: -.05em;
+    text-align: right;
+    background-color: #000;
+    border-top: 1px solid #000;
+}
+
+.popup_layer .notice_foot input {
+    vertical-align: middle;
+    margin-bottom: 4px;
+}
+
+#notice_layer2 .notice_foot input {
+    vertical-align: middle;
+    margin-bottom: 4px;
+}
+
+#notice_layer3 .notice_foot input {
+    vertical-align: middle;
+    margin-bottom: 4px;
+}
+
+.popup_layer .notice_foot img {
+    margin-right: 10px;
+    vertical-align: middle;
+    margin-bottom: 5px;
+    cursor: hand;
+    cursor: pointer;
+}
+
+#notice_layer2 .notice_foot img {
+    margin-right: 10px;
+    vertical-align: middle;
+    margin-bottom: 5px;
+    cursor: hand;
+    cursor: pointer;
+}
+
+#notice_layer3 .notice_foot img {
+    margin-right: 10px;
+    vertical-align: middle;
+    margin-bottom: 5px;
+    cursor: hand;
+    cursor: pointer;
+}
+
+#notice2_layer {
+    margin: 0;
+    background: #000;
+    cursor: default;
+    font-size: 12px;
+    color: #000;
+    border: 10px solid #909090;
+    position: absolute;
+    left: 380px;
+    top: 150px;
+    width: 582px;
+    z-index: 700000;
+    letter-spacing: -.05em;
+}
+
+    #notice2_layer .notice2_content {
+        color: #fff;
+        height: 606px;
+        overflow: auto;
+        border: none;
+        word-wrap: break-word;
+        padding-left: 15px;
+        padding-right: 15px;
+        scrollbar-3dlight-color: #333;
+        scrollbar-arrow-color: #428ECE;
+        scrollbar-track-color: #333;
+        scrollbar-darkshadow-color: #333;
+        scrollbar-face-color: #EFEFEF;
+        scrollbar-highlight-color: #333;
+        scrollbar-shadow-color: #333;
+    }
+
+    #notice2_layer .notice2_foot {
+        width: 100%;
+        height: 34px;
+        color: #fff;
+        line-height: 34px;
+        letter-spacing: -.05em;
+        text-align: right;
+        background-color: #000;
+        border-top: 1px solid #000;
+    }
+
+        #notice2_layer .notice2_foot input {
+            vertical-align: middle;
+            margin-bottom: 4px;
+        }
+
+        #notice2_layer .notice2_foot img {
+            margin-right: 10px;
+            vertical-align: middle;
+            margin-bottom: 5px;
+            cursor: hand;
+            cursor: pointer;
+        }
+
+.notice_content img {
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+    height: auto;
+}
